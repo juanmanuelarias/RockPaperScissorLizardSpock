@@ -36,4 +36,5 @@ module.exports = function (grunt) {
 
 	grunt.registerTask('test', ['jasmine_node']);
 	grunt.registerTask('ts', ['typescript']);
+	grunt.registerTask('default', ['typescript', 'jasmine_node']);
 }

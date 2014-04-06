@@ -3,18 +3,18 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{b6bab404-2f89-41e9-9548-ffc08febcded}</ProjectGuid>
+    <ProjectGuid>{5f7071f0-e275-4b31-8796-3498328953b0}</ProjectGuid>
     <ProjectHome>..\..\</ProjectHome>
     <ProjectView>ProjectFiles</ProjectView>
     <StartupFile>server.js</StartupFile>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
-    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
-    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    <EnableTypeScript>true</EnableTypeScript>
     <TypeScriptSourceMap>true</TypeScriptSourceMap>
     <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+    <EnableTypeScript>true</EnableTypeScript>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
@@ -22,27 +22,43 @@
     <Content Include="package.json" />
     <Compile Include="gruntfile.js" />
     <Compile Include="server.js" />
-    <Compile Include="app\models\lizard.js" />
-    <Compile Include="app\models\paper.js" />
-    <Compile Include="app\models\rock.js" />
-    <Compile Include="app\models\scissor.js" />
-    <Compile Include="app\models\shape.js" />
-    <Compile Include="app\models\shapeType.js" />
-    <Compile Include="app\models\spock.js" />
-    <Compile Include="test\spec\models\lizard.spec.js" />
-    <Compile Include="test\spec\models\paper.spec.js" />
-    <Compile Include="test\spec\models\rock.spec.js" />
-    <Compile Include="test\spec\models\scissor.spec.js" />
-    <Compile Include="test\spec\models\shape.spec.js" />
-    <Compile Include="test\spec\models\shapeType.spec.js" />
-    <Compile Include="test\spec\models\spock.spec.js" />
+    <Compile Include="src\objects\lizard.js" />
+    <Compile Include="src\objects\paper.js" />
+    <Compile Include="src\objects\rock.js" />
+    <Compile Include="src\objects\scissor.js" />
+    <Compile Include="src\objects\shape.js" />
+    <Compile Include="src\objects\shapeType.js" />
+    <Compile Include="src\objects\spock.js" />
+    <TypeScriptCompile Include="src\typescript\Rock.ts" />
+    <TypeScriptCompile Include="src\typescript\Scissor.ts" />
+    <TypeScriptCompile Include="src\typescript\Shape.ts" />
+    <TypeScriptCompile Include="src\typescript\ShapeType.ts" />
+    <Compile Include="src\typescript\Rock.js" />
+    <Compile Include="src\typescript\Scissor.js" />
+    <Compile Include="src\typescript\Shape.js" />
+    <Compile Include="src\typescript\ShapeType.js" />
+    <Compile Include="test\spec\objects\lizard.spec.js" />
+    <Compile Include="test\spec\objects\paper.spec.js" />
+    <Compile Include="test\spec\objects\rock.spec.js" />
+    <Compile Include="test\spec\objects\scissor.spec.js" />
+    <Compile Include="test\spec\objects\shape.spec.js" />
+    <Compile Include="test\spec\objects\shapeType.spec.js" />
+    <Compile Include="test\spec\objects\spock.spec.js" />
+    <TypeScriptCompile Include="test\spec\typescript\rock.spec.ts" />
+    <Compile Include="test\spec\typescript\rock.spec.js" />
+    <TypeScriptCompile Include="test\spec\typescript\scissor.spec.ts" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app" />
-    <Folder Include="app\models" />
+    <Folder Include="projects" />
+    <Folder Include="projects\vs2013" />
+    <Folder Include="src" />
+    <Folder Include="src\coffeescript" />
+    <Folder Include="src\objects" />
+    <Folder Include="src\typescript" />
     <Folder Include="test" />
     <Folder Include="test\spec" />
-    <Folder Include="test\spec\models" />
+    <Folder Include="test\spec\objects" />
+    <Folder Include="test\spec\typescript" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />

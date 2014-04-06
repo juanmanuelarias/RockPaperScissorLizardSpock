@@ -1,9 +1,11 @@
-import Shapes = require("Shape");
-import Types = require("ShapeType");
+import Shapes = require("./Shape");
+import Types = require("./ShapeType");
 
-class Scissor extends Shapes.Shape {
+export class Scissor extends Shapes.Shape {
     constructor() {
-        winsTo: Array<Types.ShapeType>(Types.ShapeType.paper);
+        this.winsTo = [];
+        this.winsTo.push(Types.ShapeType.paper);
+        this.winsTo.push(Types.ShapeType.lizard);
         super(Types.ShapeType.scissor, this.winsTo);
     }
 }  
