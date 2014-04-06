@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div>
+    
+</div>
+
+<div>
+    <button id="btnNewGame" class="btn btn-lg btn-primary">Create a new Game</button> 
+    <input type="text" id="gameIdNew" disabled />
+</div>
+
+<div>
+    <button id="btnJoinGame" class="btn btn-lg btn-primary">Join existing Game</button>
+    <input type="text" id="gameIdJoin" />
+</div>
+
+<div>
+    <button id="btnRock" class="btn btn-sm">Rock</button>
+    <button id="btnPaper" class="btn btn-sm">Paper</button>
+    <button id="btnScissor" class="btn btn-sm">Scissor</button>
+    <button id="btnLizard" class="btn btn-sm">Lizard</button>
+    <button id="btnSpock" class="btn btn-sm">Spock</button>
+</div>
+
+
+@section scripts {
+    <script src="~/Scripts/jquery.signalR-2.0.1.min.js"></script>
+    <script src="~/signalr/hubs"></script>
+    <script src="~/Scripts/model/game.js"></script>
+}
