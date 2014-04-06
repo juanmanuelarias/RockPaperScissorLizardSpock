@@ -1,7 +1,7 @@
-var Rock = require('../../../app/models/rock');
-var ShapeType = require('../../../app/models/shapeType');
+var Rock = require('../../../src/objects/rock');
+var ShapeType = require('../../../src/objects/shapeType');
 
-describe('create a rock', function () {
+describe('play with rock using only objects', function () {
 	
 	it ('should rock defeat scissor', function () {
 		var rock = Object.create(Rock);

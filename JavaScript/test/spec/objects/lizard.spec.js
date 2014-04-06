@@ -1,7 +1,7 @@
-var Lizard = require('../../../app/models/lizard');
-var ShapeType = require('../../../app/models/shapeType');
+var Lizard = require('../../../src/objects/lizard');
+var ShapeType = require('../../../src/objects/shapeType');
 
-describe('create a lizard', function () {
+describe('play with lizard using only objects', function () {
 	
 	it ('should lizard defeat paper', function () {
 		var lizard = Object.create(Lizard);

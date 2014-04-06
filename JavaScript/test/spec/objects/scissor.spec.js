@@ -1,7 +1,7 @@
-var Scissor = require('../../../app/models/scissor');
-var ShapeType = require('../../../app/models/shapeType');
+var Scissor = require('../../../src/objects/scissor');
+var ShapeType = require('../../../src/objects/shapeType');
 
-describe('create a scissor', function () {
+describe('play with scissor using only objects', function () {
 	
 	it ('should scissor defeat paper', function () {
 		var scissor = Object.create(Scissor);

@@ -1,7 +1,7 @@
-var Paper = require('../../../app/models/paper');
-var ShapeType = require('../../../app/models/shapeType');
+var Paper = require('../../../src/objects/paper');
+var ShapeType = require('../../../src/objects/shapeType');
 
-describe('create a paper', function () {
+describe('play with paper using only objects', function () {
 	
 	it ('should paper defeat rock', function () {
 		var paper = Object.create(Paper);

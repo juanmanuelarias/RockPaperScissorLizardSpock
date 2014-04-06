@@ -1,7 +1,7 @@
-var Spock = require('../../../app/models/spock');
-var ShapeType = require('../../../app/models/shapeType');
+var Spock = require('../../../src/objects/spock');
+var ShapeType = require('../../../src/objects/shapeType');
 
-describe('create a spock', function () {
+describe('play with using only objects', function () {
 	
 	it ('should spock defeat rock', function () {
 		var spock = Object.create(Spock);

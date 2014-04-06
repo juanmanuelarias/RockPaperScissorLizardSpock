@@ -1,6 +1,6 @@
-var ShapeType = require('../../../app/models/shapeType');
+var ShapeType = require('../../../src/objects/shapeType');
 
-describe('shape types that exist in our game', function () {
+describe('play with types using only objects', function () {
 	
 	it ('should paper be a type of shape', function () {
 		expect(ShapeType.paper).toBe("paper");
