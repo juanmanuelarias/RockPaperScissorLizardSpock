@@ -12,6 +12,12 @@ Then a MVC project was added with SignalR to use websocket capabilities and play
 
 ## JavaScript
 
-The solution is pure JavaScript, using _Jasmine_ as testing framework and _grunt_ to run the tests.
+The solution is for JavaScript and contains:
+* Pure JavaScript objects
+* TypeScript object
+
+The testing framework is _Jasmine_ 
+
+The automation is made with _grunt_, which compiles TypeScript and run all the Unit Tests
 
 No UI at the moment.
